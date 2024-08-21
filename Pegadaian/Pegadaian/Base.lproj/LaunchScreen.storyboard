@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.089999999999999997" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImgPegadaianLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LyU-Ix-bEO">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="877"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbw-XJ-gGb">
+                                <rect key="frame" x="15.999999999999993" y="388" width="98.333333333333314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pegadaian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLk-Iy-y9l">
+                                <rect key="frame" x="16" y="417" width="289" height="69"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="57"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LyU-Ix-bEO" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="6mB-W8-PCh"/>
+                            <constraint firstItem="Lbw-XJ-gGb" firstAttribute="leading" secondItem="LyU-Ix-bEO" secondAttribute="leading" constant="16" id="ESv-cB-oxd"/>
+                            <constraint firstItem="LyU-Ix-bEO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="I1y-3V-mcb"/>
+                            <constraint firstItem="LyU-Ix-bEO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QZg-Zw-eWF"/>
+                            <constraint firstItem="OLk-Iy-y9l" firstAttribute="leading" secondItem="Lbw-XJ-gGb" secondAttribute="leading" id="STg-Tc-yk5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lbw-XJ-gGb" secondAttribute="trailing" constant="16" id="XPU-5J-l8O"/>
+                            <constraint firstItem="LyU-Ix-bEO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bSp-4s-Cvj"/>
+                            <constraint firstItem="OLk-Iy-y9l" firstAttribute="top" secondItem="Lbw-XJ-gGb" secondAttribute="bottom" constant="8" id="f2s-r9-5L9"/>
+                            <constraint firstItem="OLk-Iy-y9l" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="LyU-Ix-bEO" secondAttribute="trailing" id="pJ6-w4-9PA"/>
+                            <constraint firstItem="Lbw-XJ-gGb" firstAttribute="centerY" secondItem="LyU-Ix-bEO" secondAttribute="centerY" constant="-40" id="u6T-ih-RS3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ImgPegadaianLogo" width="341.33334350585938" height="341.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
