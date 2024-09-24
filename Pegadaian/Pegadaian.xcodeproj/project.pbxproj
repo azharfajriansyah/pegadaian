@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DA4A3FD887450571399DDEC /* Pods_PegadaianTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D9BDF96CE880E37A0E0178 /* Pods_PegadaianTests.framework */; };
 		3C646EAF2CA265F5008840B4 /* TestAccessLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EAE2CA265F5008840B4 /* TestAccessLevel.swift */; };
 		3C646EB22CA2A08F008840B4 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EB12CA2A08F008840B4 /* OnboardingViewController.swift */; };
 		3C646EB82CA2B58E008840B4 /* Onboarding+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EB62CA2B58E008840B4 /* Onboarding+CoreDataClass.swift */; };
@@ -20,6 +21,8 @@
 		3C980BCA2C6A55C30072A728 /* PegadaianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BC92C6A55C30072A728 /* PegadaianTests.swift */; };
 		3C980BD42C6A55C30072A728 /* PegadaianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BD32C6A55C30072A728 /* PegadaianUITests.swift */; };
 		3C980BD62C6A55C30072A728 /* PegadaianUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BD52C6A55C30072A728 /* PegadaianUITestsLaunchTests.swift */; };
+		41C68C1BA60B7E26E2DDFD02 /* Pods_Pegadaian_PegadaianUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BFCD5E6BE6B5DC773CD07E /* Pods_Pegadaian_PegadaianUITests.framework */; };
+		768D13918ECBD9E95A731432 /* Pods_Pegadaian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA16141454E028243D3C54B1 /* Pods_Pegadaian.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02E7F68D07349C2EBD899CE4 /* Pods-Pegadaian-PegadaianUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pegadaian-PegadaianUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pegadaian-PegadaianUITests/Pods-Pegadaian-PegadaianUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C18F2E41966A4544E114F33 /* Pods-Pegadaian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pegadaian.release.xcconfig"; path = "Target Support Files/Pods-Pegadaian/Pods-Pegadaian.release.xcconfig"; sourceTree = "<group>"; };
+		35269EB127BB442C367CF64B /* Pods-PegadaianTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PegadaianTests.debug.xcconfig"; path = "Target Support Files/Pods-PegadaianTests/Pods-PegadaianTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C646EAE2CA265F5008840B4 /* TestAccessLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccessLevel.swift; sourceTree = "<group>"; };
 		3C646EB02CA26E22008840B4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3C646EB12CA2A08F008840B4 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,12 @@
 		3C980BCF2C6A55C30072A728 /* PegadaianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PegadaianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C980BD32C6A55C30072A728 /* PegadaianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegadaianUITests.swift; sourceTree = "<group>"; };
 		3C980BD52C6A55C30072A728 /* PegadaianUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegadaianUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		46D2888AA8181061EBCE9EC5 /* Pods-Pegadaian-PegadaianUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pegadaian-PegadaianUITests.release.xcconfig"; path = "Target Support Files/Pods-Pegadaian-PegadaianUITests/Pods-Pegadaian-PegadaianUITests.release.xcconfig"; sourceTree = "<group>"; };
+		95BFCD5E6BE6B5DC773CD07E /* Pods_Pegadaian_PegadaianUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pegadaian_PegadaianUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA16141454E028243D3C54B1 /* Pods_Pegadaian.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pegadaian.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3021D862F39F4D0A1BDA838 /* Pods-PegadaianTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PegadaianTests.release.xcconfig"; path = "Target Support Files/Pods-PegadaianTests/Pods-PegadaianTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3A6CD15009D60231776F02C /* Pods-Pegadaian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pegadaian.debug.xcconfig"; path = "Target Support Files/Pods-Pegadaian/Pods-Pegadaian.debug.xcconfig"; sourceTree = "<group>"; };
+		F8D9BDF96CE880E37A0E0178 /* Pods_PegadaianTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PegadaianTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768D13918ECBD9E95A731432 /* Pods_Pegadaian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA4A3FD887450571399DDEC /* Pods_PegadaianTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C68C1BA60B7E26E2DDFD02 /* Pods_Pegadaian_PegadaianUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +119,8 @@
 				3C980BC82C6A55C30072A728 /* PegadaianTests */,
 				3C980BD22C6A55C30072A728 /* PegadaianUITests */,
 				3C980BAD2C6A55C10072A728 /* Products */,
+				A36C68978B3E681433D965B4 /* Pods */,
+				6073F13396CCE3EC62A140EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +166,29 @@
 			path = PegadaianUITests;
 			sourceTree = "<group>";
 		};
+		6073F13396CCE3EC62A140EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA16141454E028243D3C54B1 /* Pods_Pegadaian.framework */,
+				95BFCD5E6BE6B5DC773CD07E /* Pods_Pegadaian_PegadaianUITests.framework */,
+				F8D9BDF96CE880E37A0E0178 /* Pods_PegadaianTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A36C68978B3E681433D965B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3A6CD15009D60231776F02C /* Pods-Pegadaian.debug.xcconfig */,
+				2C18F2E41966A4544E114F33 /* Pods-Pegadaian.release.xcconfig */,
+				02E7F68D07349C2EBD899CE4 /* Pods-Pegadaian-PegadaianUITests.debug.xcconfig */,
+				46D2888AA8181061EBCE9EC5 /* Pods-Pegadaian-PegadaianUITests.release.xcconfig */,
+				35269EB127BB442C367CF64B /* Pods-PegadaianTests.debug.xcconfig */,
+				D3021D862F39F4D0A1BDA838 /* Pods-PegadaianTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C980BD92C6A55C30072A728 /* Build configuration list for PBXNativeTarget "Pegadaian" */;
 			buildPhases = (
+				9D359832A015FF76888BA5CA /* [CP] Check Pods Manifest.lock */,
 				3C980BA82C6A55C10072A728 /* Sources */,
 				3C980BA92C6A55C10072A728 /* Frameworks */,
 				3C980BAA2C6A55C10072A728 /* Resources */,
+				D68BFF05D6685631E9376A33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C980BDC2C6A55C30072A728 /* Build configuration list for PBXNativeTarget "PegadaianTests" */;
 			buildPhases = (
+				122953BFD163CE7C01EF12CF /* [CP] Check Pods Manifest.lock */,
 				3C980BC12C6A55C30072A728 /* Sources */,
 				3C980BC22C6A55C30072A728 /* Frameworks */,
 				3C980BC32C6A55C30072A728 /* Resources */,
@@ -191,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C980BDF2C6A55C30072A728 /* Build configuration list for PBXNativeTarget "PegadaianUITests" */;
 			buildPhases = (
+				77A870DA94575FEE4BB4DB9F /* [CP] Check Pods Manifest.lock */,
 				3C980BCB2C6A55C30072A728 /* Sources */,
 				3C980BCC2C6A55C30072A728 /* Frameworks */,
 				3C980BCD2C6A55C30072A728 /* Resources */,
+				A1FE56223DAF392E1D2FF9D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,6 +318,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		122953BFD163CE7C01EF12CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PegadaianTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77A870DA94575FEE4BB4DB9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pegadaian-PegadaianUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D359832A015FF76888BA5CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pegadaian-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1FE56223DAF392E1D2FF9D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pegadaian-PegadaianUITests/Pods-Pegadaian-PegadaianUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pegadaian-PegadaianUITests/Pods-Pegadaian-PegadaianUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pegadaian-PegadaianUITests/Pods-Pegadaian-PegadaianUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D68BFF05D6685631E9376A33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pegadaian/Pods-Pegadaian-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pegadaian/Pods-Pegadaian-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pegadaian/Pods-Pegadaian-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C980BA82C6A55C10072A728 /* Sources */ = {
@@ -455,12 +603,14 @@
 		};
 		3C980BDA2C6A55C30072A728 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3A6CD15009D60231776F02C /* Pods-Pegadaian.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V3NKC5FJ4J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pegadaian/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
@@ -487,12 +637,14 @@
 		};
 		3C980BDB2C6A55C30072A728 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C18F2E41966A4544E114F33 /* Pods-Pegadaian.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V3NKC5FJ4J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pegadaian/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
@@ -519,6 +671,7 @@
 		};
 		3C980BDD2C6A55C30072A728 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35269EB127BB442C367CF64B /* Pods-PegadaianTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -539,6 +692,7 @@
 		};
 		3C980BDE2C6A55C30072A728 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3021D862F39F4D0A1BDA838 /* Pods-PegadaianTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +713,7 @@
 		};
 		3C980BE02C6A55C30072A728 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02E7F68D07349C2EBD899CE4 /* Pods-Pegadaian-PegadaianUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -577,6 +732,7 @@
 		};
 		3C980BE12C6A55C30072A728 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46D2888AA8181061EBCE9EC5 /* Pods-Pegadaian-PegadaianUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

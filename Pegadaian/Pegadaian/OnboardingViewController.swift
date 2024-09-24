@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class OnboardingViewController: UIViewController {
     
@@ -42,15 +43,12 @@ class OnboardingViewController: UIViewController {
     
     func setupMasukButton() {
         view.addSubview(masukButton)
-        view.addConstraints(
-            [
-                NSLayoutConstraint(item: masukButton, attribute: .left, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .left, multiplier: 1, constant: 24),
-                NSLayoutConstraint(item: masukButton, attribute: .bottom, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .bottom, multiplier: 1, constant: 0),
-                NSLayoutConstraint(item: masukButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 50),
-                NSLayoutConstraint(item: masukButton, attribute: .centerX, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .centerX, multiplier: 1, constant: 0)
-            ]
-        )
-        view.layoutIfNeeded()
+        masukButton.snp.makeConstraints { make in
+            make.left.equalTo(view.safeAreaLayoutGuide.snp.left).offset(24)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-24)
+            make.height.equalTo(50)
+            make.centerX.equalToSuperview()
+        }
     }
     
     func setupDaftarButton() {
