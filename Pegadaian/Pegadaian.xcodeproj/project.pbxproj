@@ -111,6 +111,24 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		3C646EBC2CA36CA5008840B4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3C980BBB2C6A55C30072A728 /* Assets.xcassets */,
+				3C980BBD2C6A55C30072A728 /* LaunchScreen.storyboard */,
+				3C980BC02C6A55C30072A728 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3C646EBE2CA36CF1008840B4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3C980BAF2C6A55C10072A728 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		3C980BA32C6A55C10072A728 = {
 			isa = PBXGroup;
 			children = (
@@ -137,14 +155,12 @@
 		3C980BAE2C6A55C10072A728 /* Pegadaian */ = {
 			isa = PBXGroup;
 			children = (
-				3C646EB52CA2B422008840B4 /* CoreData */,
-				3C980BAF2C6A55C10072A728 /* AppDelegate.swift */,
-				3C980BB32C6A55C10072A728 /* ViewController.swift */,
-				3C980BBB2C6A55C30072A728 /* Assets.xcassets */,
-				3C980BBD2C6A55C30072A728 /* LaunchScreen.storyboard */,
-				3C980BC02C6A55C30072A728 /* Info.plist */,
-				3C646EAE2CA265F5008840B4 /* TestAccessLevel.swift */,
 				3C646EB12CA2A08F008840B4 /* OnboardingViewController.swift */,
+				3C646EAE2CA265F5008840B4 /* TestAccessLevel.swift */,
+				3C980BB32C6A55C10072A728 /* ViewController.swift */,
+				3C646EBE2CA36CF1008840B4 /* App */,
+				3C646EB52CA2B422008840B4 /* CoreData */,
+				3C646EBC2CA36CA5008840B4 /* SupportingFiles */,
 			);
 			path = Pegadaian;
 			sourceTree = "<group>";
@@ -612,7 +628,7 @@
 				DEVELOPMENT_TEAM = V3NKC5FJ4J;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pegadaian/Info.plist;
+				INFOPLIST_FILE = Pegadaian/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -646,7 +662,7 @@
 				DEVELOPMENT_TEAM = V3NKC5FJ4J;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pegadaian/Info.plist;
+				INFOPLIST_FILE = Pegadaian/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

@@ -32,14 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         debugPrint("willResignActive called")
     }
     
-    func appStateBuatanSendiri(theParam param: String) {
-        updateData("123", value: "ABCDE")
-    }
-    
-    func updateData(_ id: String, value: String) {
-        
-    }
-    
     func applicationDidEnterBackground(_ application: UIApplication) {
         debugPrint("didEnterBackground called")
     }
@@ -51,8 +43,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) {
         debugPrint("didBecomeActive called")
     }
-
-    
-
 }
 
