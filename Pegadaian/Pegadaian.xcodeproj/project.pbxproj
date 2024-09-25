@@ -13,6 +13,16 @@
 		3C646EB82CA2B58E008840B4 /* Onboarding+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EB62CA2B58E008840B4 /* Onboarding+CoreDataClass.swift */; };
 		3C646EB92CA2B58E008840B4 /* Onboarding+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EB72CA2B58E008840B4 /* Onboarding+CoreDataProperties.swift */; };
 		3C646EBB2CA2B646008840B4 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EBA2CA2B646008840B4 /* CoreDataHelper.swift */; };
+		3C646EC62CA3A041008840B4 /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EC12CA3A041008840B4 /* LoginInterfaces.swift */; };
+		3C646EC72CA3A041008840B4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EC22CA3A041008840B4 /* LoginPresenter.swift */; };
+		3C646EC82CA3A041008840B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EC32CA3A041008840B4 /* LoginViewController.swift */; };
+		3C646EC92CA3A041008840B4 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EC42CA3A041008840B4 /* LoginInteractor.swift */; };
+		3C646ECA2CA3A041008840B4 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EC52CA3A041008840B4 /* LoginWireframe.swift */; };
+		3C646ED22CA3A0C0008840B4 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646ECB2CA3A0C0008840B4 /* BaseWireframe.swift */; };
+		3C646ED32CA3A0C0008840B4 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646ECC2CA3A0C0008840B4 /* InteractorInterface.swift */; };
+		3C646ED42CA3A0C0008840B4 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646ECD2CA3A0C0008840B4 /* PresenterInterface.swift */; };
+		3C646ED52CA3A0C0008840B4 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646ECE2CA3A0C0008840B4 /* UIStoryboardExtension.swift */; };
+		3C646ED62CA3A0C0008840B4 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646ECF2CA3A0C0008840B4 /* ViewInterface.swift */; };
 		3C980BB02C6A55C10072A728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BAF2C6A55C10072A728 /* AppDelegate.swift */; };
 		3C980BB42C6A55C10072A728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BB32C6A55C10072A728 /* ViewController.swift */; };
 		3C980BBA2C6A55C10072A728 /* Pegadaian.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BB82C6A55C10072A728 /* Pegadaian.xcdatamodeld */; };
@@ -52,6 +62,16 @@
 		3C646EB62CA2B58E008840B4 /* Onboarding+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Onboarding+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3C646EB72CA2B58E008840B4 /* Onboarding+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Onboarding+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3C646EBA2CA2B646008840B4 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		3C646EC12CA3A041008840B4 /* LoginInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaces.swift; sourceTree = "<group>"; };
+		3C646EC22CA3A041008840B4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		3C646EC32CA3A041008840B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3C646EC42CA3A041008840B4 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		3C646EC52CA3A041008840B4 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		3C646ECB2CA3A0C0008840B4 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		3C646ECC2CA3A0C0008840B4 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		3C646ECD2CA3A0C0008840B4 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		3C646ECE2CA3A0C0008840B4 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		3C646ECF2CA3A0C0008840B4 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
 		3C980BAC2C6A55C10072A728 /* Pegadaian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pegadaian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C980BAF2C6A55C10072A728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C980BB32C6A55C10072A728 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +149,47 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		3C646EBF2CA3A01E008840B4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3C646ED12CA3A0C0008840B4 /* Base */,
+				3C646EC02CA3A02A008840B4 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3C646EC02CA3A02A008840B4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3C646EC12CA3A041008840B4 /* LoginInterfaces.swift */,
+				3C646EC22CA3A041008840B4 /* LoginPresenter.swift */,
+				3C646EC32CA3A041008840B4 /* LoginViewController.swift */,
+				3C646EC42CA3A041008840B4 /* LoginInteractor.swift */,
+				3C646EC52CA3A041008840B4 /* LoginWireframe.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3C646ED02CA3A0C0008840B4 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				3C646ECB2CA3A0C0008840B4 /* BaseWireframe.swift */,
+				3C646ECC2CA3A0C0008840B4 /* InteractorInterface.swift */,
+				3C646ECD2CA3A0C0008840B4 /* PresenterInterface.swift */,
+				3C646ECE2CA3A0C0008840B4 /* UIStoryboardExtension.swift */,
+				3C646ECF2CA3A0C0008840B4 /* ViewInterface.swift */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		3C646ED12CA3A0C0008840B4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3C646ED02CA3A0C0008840B4 /* Viper */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		3C980BA32C6A55C10072A728 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +221,7 @@
 				3C980BB32C6A55C10072A728 /* ViewController.swift */,
 				3C646EBE2CA36CF1008840B4 /* App */,
 				3C646EB52CA2B422008840B4 /* CoreData */,
+				3C646EBF2CA3A01E008840B4 /* Modules */,
 				3C646EBC2CA36CA5008840B4 /* SupportingFiles */,
 			);
 			path = Pegadaian;
@@ -445,10 +507,20 @@
 			files = (
 				3C980BBA2C6A55C10072A728 /* Pegadaian.xcdatamodeld in Sources */,
 				3C980BB42C6A55C10072A728 /* ViewController.swift in Sources */,
+				3C646EC62CA3A041008840B4 /* LoginInterfaces.swift in Sources */,
+				3C646EC72CA3A041008840B4 /* LoginPresenter.swift in Sources */,
+				3C646ED62CA3A0C0008840B4 /* ViewInterface.swift in Sources */,
+				3C646EC82CA3A041008840B4 /* LoginViewController.swift in Sources */,
+				3C646EC92CA3A041008840B4 /* LoginInteractor.swift in Sources */,
+				3C646ED32CA3A0C0008840B4 /* InteractorInterface.swift in Sources */,
+				3C646ECA2CA3A041008840B4 /* LoginWireframe.swift in Sources */,
 				3C646EBB2CA2B646008840B4 /* CoreDataHelper.swift in Sources */,
 				3C646EB82CA2B58E008840B4 /* Onboarding+CoreDataClass.swift in Sources */,
 				3C646EB92CA2B58E008840B4 /* Onboarding+CoreDataProperties.swift in Sources */,
 				3C646EB22CA2A08F008840B4 /* OnboardingViewController.swift in Sources */,
+				3C646ED42CA3A0C0008840B4 /* PresenterInterface.swift in Sources */,
+				3C646ED22CA3A0C0008840B4 /* BaseWireframe.swift in Sources */,
+				3C646ED52CA3A0C0008840B4 /* UIStoryboardExtension.swift in Sources */,
 				3C646EAF2CA265F5008840B4 /* TestAccessLevel.swift in Sources */,
 				3C980BB02C6A55C10072A728 /* AppDelegate.swift in Sources */,
 			);
