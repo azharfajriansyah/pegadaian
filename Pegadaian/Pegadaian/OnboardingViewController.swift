@@ -10,7 +10,7 @@ import SnapKit
 
 class OnboardingViewController: UIViewController {
     
-    lazy var masukButton: UIButton = {
+    lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Masuk", for: .normal)
@@ -21,7 +21,7 @@ class OnboardingViewController: UIViewController {
         return button
     }()
     
-    lazy var daftarButton: UIButton = {
+    lazy var registerButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Daftar", for: .normal)
@@ -42,8 +42,8 @@ class OnboardingViewController: UIViewController {
     }
     
     func setupMasukButton() {
-        view.addSubview(masukButton)
-        masukButton.snp.makeConstraints { make in
+        view.addSubview(loginButton)
+        loginButton.snp.makeConstraints { make in
             make.left.equalTo(view.safeAreaLayoutGuide.snp.left).offset(24)
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-24)
             make.height.equalTo(50)
@@ -52,13 +52,13 @@ class OnboardingViewController: UIViewController {
     }
     
     func setupDaftarButton() {
-        view.addSubview(daftarButton)
+        view.addSubview(registerButton)
         view.addConstraints(
             [
-                NSLayoutConstraint(item: daftarButton, attribute: .left, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .left, multiplier: 1, constant: 24),
-                NSLayoutConstraint(item: daftarButton, attribute: .bottom, relatedBy: .equal, toItem: masukButton.safeAreaLayoutGuide, attribute: .top, multiplier: 1, constant: -16),
-                NSLayoutConstraint(item: daftarButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 50),
-                NSLayoutConstraint(item: daftarButton, attribute: .centerX, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .centerX, multiplier: 1, constant: 0)
+                NSLayoutConstraint(item: registerButton, attribute: .left, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .left, multiplier: 1, constant: 24),
+                NSLayoutConstraint(item: registerButton, attribute: .bottom, relatedBy: .equal, toItem: loginButton.safeAreaLayoutGuide, attribute: .top, multiplier: 1, constant: -16),
+                NSLayoutConstraint(item: registerButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 50),
+                NSLayoutConstraint(item: registerButton, attribute: .centerX, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .centerX, multiplier: 1, constant: 0)
             ]
         )
         view.layoutIfNeeded()
