@@ -13,7 +13,7 @@ final class LoginWireframe: BaseWireframe {
 
     // MARK: - Module setup -
 
-    init() {
+    init(referral: String) {
         let moduleViewController = LoginViewController()
         super.init(viewController: moduleViewController)
         
@@ -29,5 +29,8 @@ final class LoginWireframe: BaseWireframe {
 extension LoginWireframe: LoginWireframeInterface {
 
     func navigate(to option: LoginNavigationOption) {
+        switch option {
+        case .homepage(let referral): navigationController?.pushViewController(OnboardingViewController(), animated: true)
+        }
     }
 }

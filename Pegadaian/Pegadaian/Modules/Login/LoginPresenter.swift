@@ -29,8 +29,19 @@ final class LoginPresenter {
 extension LoginPresenter: LoginPresenterInterface {
     func viewDidLoad() {
         view.setTitle("Login")
-        // perintahkan interactor untuk ngambil data
-        
-        view.
+    }
+    
+    func viewDidAppear(animated: Bool) {
+        view.setBackgroundColor(UIColor.red)
+    }
+    
+    func didUserSelectLogin(username: String, password: String) {
+        interactor.login(username: username, password: password, completion: { [weak self] (success, message) in
+            if success { //sukses
+                self?.wireframe.navigate(to: .homepage("LoginPage"))
+            } else {
+                // kasih tau view untuk menampilkan error
+            }
+        })
     }
 }

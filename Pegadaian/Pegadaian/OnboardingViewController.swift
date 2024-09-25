@@ -53,6 +53,12 @@ class OnboardingViewController: UIViewController {
     
     func setupDaftarButton() {
         view.addSubview(registerButton)
+        registerButton.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(24)
+            make.bottom.equalTo(loginButton.snp.top).offset(-24)
+            make.height.equalTo(50)
+            make.centerX.equalToSuperview()
+        }
         view.addConstraints(
             [
                 NSLayoutConstraint(item: registerButton, attribute: .left, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .left, multiplier: 1, constant: 24),
@@ -86,5 +92,8 @@ extension OnboardingViewController {
 
 // MARK: - TableView UI & Handler
 extension OnboardingViewController {
-    
+    @objc
+    func buttonAction() {
+        
+    }
 }

@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         if let window {
-            window.rootViewController = UINavigationController(rootViewController: LoginWireframe().viewController)
+            window.rootViewController = UINavigationController(rootViewController: LoginWireframe(referral: "AppDelegate").viewController)
             window.makeKeyAndVisible()
         }
         
