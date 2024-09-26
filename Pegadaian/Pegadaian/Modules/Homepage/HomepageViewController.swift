@@ -73,4 +73,8 @@ extension HomepageViewController: HomepageViewInterface {
     func greetUser(withName name: String) {
         greetingsLabel.text = "Hi, welcome to Pegadaian, \(name)!"
     }
+    
+    func showError(_ error: PGSError) {
+        
+    }
 }

@@ -19,17 +19,28 @@ class PGSNetwork {
     lazy var sessionManager: SessionManager = {
         let configuration = URLSessionConfiguration.ephemeral
         let sessionManager = SessionManager(configuration: configuration)
+        sessionManager.adapter = PGSNetworkRequestAdapter()
+        
+        sessionManager.delegate.taskWillPerformHTTPRedirection = { session, task, response, request in
+            var redirectedRequest = request
+            
+            if let originalRequest = task.originalRequest,
+               let headers = originalRequest.allHTTPHeaderFields,
+               let authHeaderValue = headers["Authorization"] {
+                
+                var mutableRequest = request as! NSMutableURLRequest
+                mutableRequest.setValue(authHeaderValue, forHTTPHeaderField: "Authorization")
+                redirectedRequest = mutableRequest as URLRequest
+            }
+            return redirectedRequest
+        }
+        
         return sessionManager
     }()
     
     func request<T: Decodable>(PGSApi: PGSAPI, parameter: Encodable? = nil, expectedResponseType: T.Type, completion: @escaping (Result<T>) -> Void) {
-        var headers: [String:String] = [String:String]()
-        if let token = PGSKeychain.shared.retrieveApiToken() {
-            headers["Authorization"] = "Bearer \(token.0)"
-        }
         
-        debugPrint(headers)
-        sessionManager.request(PGSApi.url, method: PGSApi.method, parameters: parameter?.toJSON(), headers: headers).responseJSON { response in
+        sessionManager.request(PGSApi.url, method: PGSApi.method, parameters: parameter?.toJSON()).responseJSON { response in
             debugPrint(response)
             
             guard let data = response.data else { return }
@@ -43,5 +54,16 @@ class PGSNetwork {
                 completion(.error(PGSError.responseDecodingFailed))
             }
         }
+    }
+}
+
+class PGSNetworkRequestAdapter: RequestAdapter {
+    func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
+        guard let token = PGSKeychain.shared.retrieveApiToken() else { return urlRequest }
+        
+        var urlRequest = urlRequest
+        urlRequest.setValue("Bearer \(token.0)", forHTTPHeaderField: "Authorization")
+        urlRequest.timeoutInterval = TimeInterval(5)
+        return urlRequest
     }
 }
