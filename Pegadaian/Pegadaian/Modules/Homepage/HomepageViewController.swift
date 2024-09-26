@@ -20,6 +20,11 @@ final class HomepageViewController: UIViewController {
         label.numberOfLines = 0
         return label
     }()
+    
+    lazy var logoutButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(title: "Logout", image: nil, target: self, action: #selector(didTapLogout))
+        return button
+    }()
 
     var presenter: HomepagePresenterInterface!
 
@@ -39,6 +44,7 @@ final class HomepageViewController: UIViewController {
     }
     
     func setupViews() {
+        navigationItem.rightBarButtonItem = logoutButton
         view.addSubview(greetingsLabel)
     }
     
@@ -47,6 +53,16 @@ final class HomepageViewController: UIViewController {
             make.left.greaterThanOrEqualTo(view.safeAreaLayoutGuide.snp.left).offset(24)
             make.center.equalToSuperview()
         }
+    }
+    
+    @objc
+    func didTapLogout() {
+        debugPrint("logout called")
+        presenter.didUserSelectLogoutAction()
+        // call presenter
+        // presenter -> interactor untuk remove token
+        // interacgtor -> presenter bahwa remove token selesai
+        // presenter -> wireframe -> instruksi untuk navigate
     }
 	
 }

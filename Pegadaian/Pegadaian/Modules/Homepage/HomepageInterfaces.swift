@@ -8,6 +8,7 @@
 import UIKit
 
 enum HomepageNavigationOption {
+    case logout
 }
 
 protocol HomepageWireframeInterface: WireframeInterface {
@@ -19,8 +20,10 @@ protocol HomepageViewInterface: ViewInterface {
 }
 
 protocol HomepagePresenterInterface: PresenterInterface {
+    func didUserSelectLogoutAction()
 }
 
 protocol HomepageInteractorInterface: InteractorInterface {
     func fetchUserProfile(completion: @escaping (Result<User>) -> Void)
+    func logout(completion: @escaping (Result<Bool>) -> Void)
 }

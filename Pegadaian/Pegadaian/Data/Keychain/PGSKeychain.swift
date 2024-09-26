@@ -48,6 +48,10 @@ class PGSKeychain {
         return nil
     }
     
+    func removeApiToken() -> Bool {
+        return remove(key: .apiToken)
+    }
+    
     func clearKeychainData() {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword
@@ -72,6 +76,18 @@ extension PGSKeychain {
 
         // Add the credentials to the Keychain
         let status = SecItemAdd(query as CFDictionary, nil)
+        return status == errSecSuccess
+    }
+    
+    fileprivate func remove(key: PGSKeychainKey) -> Bool {
+
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrAccount as String: key.rawValue
+        ]
+        
+        // Remove any existing item with the same account
+        let status = SecItemDelete(query as CFDictionary)
         return status == errSecSuccess
     }
     

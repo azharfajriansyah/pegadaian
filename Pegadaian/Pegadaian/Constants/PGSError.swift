@@ -12,6 +12,7 @@ enum PGSError: Error {
     case biometricIdentityNotFound
     case authenticationError(message: String)
     case requiredFieldsEmpty
+    case removeDataError
     
     var uiCopy: (String, String) {
         switch self {
@@ -19,6 +20,7 @@ enum PGSError: Error {
         case .biometricIdentityNotFound: ("Your biometric login is currently unavailable", "Please activate it after login using password")
         case .authenticationError(let message): (message, message)
         case .requiredFieldsEmpty: ("Oops", "Please fill the required fields")
+        case .removeDataError: ("Oops", "Something went wrong while doing the process")
         }
     }
 }

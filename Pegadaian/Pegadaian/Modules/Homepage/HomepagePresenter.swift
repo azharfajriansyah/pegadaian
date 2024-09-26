@@ -27,6 +27,17 @@ final class HomepagePresenter {
 // MARK: - Extensions -
 
 extension HomepagePresenter: HomepagePresenterInterface {
+    func didUserSelectLogoutAction() {
+        interactor.logout { [weak self] result in
+            switch result {
+            case .success(_):
+                self?.wireframe.navigate(to: .logout)
+            case .error(let error):
+                self?.view.showError(.removeDataError)
+            }
+        }
+    }
+    
     func viewDidAppear(animated: Bool) {
         view.showLoader(withMessage: "Loading")
         interactor.fetchUserProfile { [weak self] result in

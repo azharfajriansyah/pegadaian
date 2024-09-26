@@ -29,5 +29,11 @@ final class HomepageWireframe: BaseWireframe {
 extension HomepageWireframe: HomepageWireframeInterface {
 
     func navigate(to option: HomepageNavigationOption) {
+        switch option {
+        case .logout:
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.appRoute()
+            }
+        }
     }
 }
