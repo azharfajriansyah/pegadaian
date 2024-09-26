@@ -14,6 +14,11 @@ final class LoginPresenter {
     private unowned let view: LoginViewInterface
     private let wireframe: LoginWireframeInterface
     private let interactor: LoginInteractorInterface
+    
+    // Sample closure with return value
+    let someClosure: (_ valueA: Int,_ valueB: Int) -> Int = { valueA, valueB in
+        return valueA + valueB
+    }
 
     // MARK: - Lifecycle -
 

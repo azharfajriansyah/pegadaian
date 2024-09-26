@@ -69,6 +69,12 @@ final class LoginViewController: BaseViewController {
         view.backgroundColor = .white
         presenter.viewDidLoad()
         
+        #if DEBUG
+        debugPrint("DEBUG")
+        #else
+        debugPrint("RELEASE")
+        #endif
+        
         setupViews()
         setupConstrainits()
         
