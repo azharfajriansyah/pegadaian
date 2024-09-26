@@ -39,6 +39,7 @@
 		3C646F0C2CA492BC008840B4 /* HomepageWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646F072CA492BC008840B4 /* HomepageWireframe.swift */; };
 		3C646F0F2CA494EA008840B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646F0E2CA494EA008840B4 /* User.swift */; };
 		3C646F122CA4981E008840B4 /* PGSKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646F112CA4981E008840B4 /* PGSKeychain.swift */; };
+		3C7AC7EA2CA51CF400D797A7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AC7E92CA51CF400D797A7 /* BaseViewController.swift */; };
 		3C980BB02C6A55C10072A728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BAF2C6A55C10072A728 /* AppDelegate.swift */; };
 		3C980BB42C6A55C10072A728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BB32C6A55C10072A728 /* ViewController.swift */; };
 		3C980BBA2C6A55C10072A728 /* Pegadaian.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BB82C6A55C10072A728 /* Pegadaian.xcdatamodeld */; };
@@ -104,6 +105,7 @@
 		3C646F072CA492BC008840B4 /* HomepageWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageWireframe.swift; sourceTree = "<group>"; };
 		3C646F0E2CA494EA008840B4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3C646F112CA4981E008840B4 /* PGSKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSKeychain.swift; sourceTree = "<group>"; };
+		3C7AC7E92CA51CF400D797A7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3C980BAC2C6A55C10072A728 /* Pegadaian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pegadaian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C980BAF2C6A55C10072A728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C980BB32C6A55C10072A728 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				3C646ED02CA3A0C0008840B4 /* Viper */,
+				3C7AC7E92CA51CF400D797A7 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -662,6 +665,7 @@
 				3C646EFC2CA40AED008840B4 /* EncodableExtensions.swift in Sources */,
 				3C646EC92CA3A041008840B4 /* LoginInteractor.swift in Sources */,
 				3C646ED32CA3A0C0008840B4 /* InteractorInterface.swift in Sources */,
+				3C7AC7EA2CA51CF400D797A7 /* BaseViewController.swift in Sources */,
 				3C646ECA2CA3A041008840B4 /* LoginWireframe.swift in Sources */,
 				3C646EBB2CA2B646008840B4 /* CoreDataHelper.swift in Sources */,
 				3C646EB82CA2B58E008840B4 /* Onboarding+CoreDataClass.swift in Sources */,

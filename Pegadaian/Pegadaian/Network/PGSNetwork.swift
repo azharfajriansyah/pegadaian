@@ -16,12 +16,20 @@ enum Result<Value> {
 class PGSNetwork {
     static let shared = PGSNetwork()
     
+    lazy var sessionManager: SessionManager = {
+        let configuration = URLSessionConfiguration.ephemeral
+        let sessionManager = SessionManager(configuration: configuration)
+        return sessionManager
+    }()
+    
     func request<T: Decodable>(PGSApi: PGSAPI, parameter: Encodable? = nil, expectedResponseType: T.Type, completion: @escaping (Result<T>) -> Void) {
-        var headers: [String:String]?
+        var headers: [String:String] = [String:String]()
         if let token = PGSKeychain.shared.retrieveApiToken() {
-            headers?["Authorization"] = "Bearer \(token.0)"
+            headers["Authorization"] = "Bearer \(token.0)"
         }
-        Alamofire.request(PGSApi.url, method: PGSApi.method, parameters: parameter?.toJSON(), headers: headers).responseJSON { response in
+        
+        debugPrint(headers)
+        sessionManager.request(PGSApi.url, method: PGSApi.method, parameters: parameter?.toJSON(), headers: headers).responseJSON { response in
             debugPrint(response)
             
             guard let data = response.data else { return }

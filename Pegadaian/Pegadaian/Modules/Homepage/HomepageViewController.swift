@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class HomepageViewController: UIViewController {
+final class HomepageViewController: BaseViewController {
 
     // MARK: - Public properties -
     

@@ -12,7 +12,12 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    lazy var blurEffect: UIVisualEffectView = {
+        let effect = UIBlurEffect(style: .dark)
+        let effectView = UIVisualEffectView(effect: effect)
+        return effectView
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -26,9 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillResignActive(_ application: UIApplication) {
         debugPrint("willResignActive called")
+        addBlurrEffect()
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
+        //case untuk add blur view
         debugPrint("didEnterBackground called")
     }
     
@@ -38,6 +45,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         debugPrint("didBecomeActive called")
+        blurEffect.removeFromSuperview()
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        // case untuk remember user credential
+        debugPrint("willTerminate called")
+        
     }
 }
 
@@ -49,6 +63,11 @@ extension AppDelegate {
             window.rootViewController = UINavigationController(rootViewController: viewController)
             window.makeKeyAndVisible()
         }
+    }
+    
+    func addBlurrEffect() {
+        blurEffect.frame = UIScreen.main.bounds
+        window?.addSubview(blurEffect)
     }
 }
 
