@@ -8,7 +8,7 @@
 import UIKit
 
 enum LoginNavigationOption {
-    case homepage(String)
+    case postLogin
 }
 
 protocol LoginWireframeInterface: WireframeInterface {
@@ -17,13 +17,15 @@ protocol LoginWireframeInterface: WireframeInterface {
 
 protocol LoginViewInterface: ViewInterface {
     func setTitle(_ title: String)
-    func setBackgroundColor(_ color: UIColor)
+    func showError(_ error: PGSError)
 }
 
 protocol LoginPresenterInterface: PresenterInterface {
     func didUserSelectLogin(username: String, password: String)
+    func didUserSelectLoginUsingBiometric()
 }
 
 protocol LoginInteractorInterface: InteractorInterface {
-    func login(username: String, password: String, completion: @escaping (Bool, String) -> Void) // status sukses & message
+    func login(username: String, password: String, completion: @escaping (Result<User>) -> Void)
+    func loginUsingBiometric(completion: @escaping (Result<User>) -> Void)
 }

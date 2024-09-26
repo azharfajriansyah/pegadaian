@@ -17,7 +17,7 @@ enum PGSAPI {
         switch self {
         case .login: "https://dummyjson.com/auth/login"
         case .register: "https://dummyjson.com/auth/register"
-        case .getProfile: "https://dummyjson.com/profile/me"
+        case .getProfile: "https://dummyjson.com/auth/me"
         }
     }
     

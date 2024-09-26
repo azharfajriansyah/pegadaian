@@ -17,11 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        if let window {
-            window.rootViewController = UINavigationController(rootViewController: LoginWireframe(referral: "AppDelegate").viewController)
-            window.makeKeyAndVisible()
-        }
+        appRoute()
         
         debugPrint("didFinishLaunchingWithOptions called")
         
@@ -42,6 +38,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         debugPrint("didBecomeActive called")
+    }
+}
+
+extension AppDelegate {
+    func appRoute() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        if let window {
+            let viewController = PGSKeychain.shared.userSessionExist ? HomepageWireframe().viewController : LoginWireframe().viewController
+            window.rootViewController = UINavigationController(rootViewController: viewController)
+            window.makeKeyAndVisible()
+        }
     }
 }
 

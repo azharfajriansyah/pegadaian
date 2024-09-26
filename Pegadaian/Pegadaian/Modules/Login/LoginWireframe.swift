@@ -13,7 +13,7 @@ final class LoginWireframe: BaseWireframe {
 
     // MARK: - Module setup -
 
-    init(referral: String) {
+    init() {
         let moduleViewController = LoginViewController()
         super.init(viewController: moduleViewController)
         
@@ -30,7 +30,13 @@ extension LoginWireframe: LoginWireframeInterface {
 
     func navigate(to option: LoginNavigationOption) {
         switch option {
-        case .homepage(let referral): navigationController?.pushViewController(OnboardingViewController(), animated: true)
+        case .postLogin: postLoginNavigation()
+        }
+    }
+    
+    func postLoginNavigation() {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.appRoute()
         }
     }
 }

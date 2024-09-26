@@ -6,6 +6,7 @@ target 'Pegadaian' do
   use_frameworks!
   pod 'SnapKit'
   pod 'Alamofire', '~>4.0'
+  pod 'SVProgressHUD'
 
   # Pods for Pegadaian
 

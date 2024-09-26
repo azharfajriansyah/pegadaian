@@ -31,17 +31,31 @@ extension LoginPresenter: LoginPresenterInterface {
         view.setTitle("Login")
     }
     
-    func viewDidAppear(animated: Bool) {
-        view.setBackgroundColor(UIColor.red)
-    }
-    
     func didUserSelectLogin(username: String, password: String) {
-        interactor.login(username: username, password: password, completion: { [weak self] (success, message) in
-            if success { //sukses
-                self?.wireframe.navigate(to: .homepage("LoginPage"))
-            } else {
-                // kasih tau view untuk menampilkan error
+        view.showLoader(withMessage: "Loading")
+        interactor.login(username: username, password: password, completion: { [weak self] result in
+            self?.view.dismissLoader()
+            switch result {
+            case .success(let user):
+                debugPrint("Login success using username: \(String(describing: user.username))")
+                self?.wireframe.navigate(to: .postLogin)
+            case .error(let error):
+                self?.view.showError(error)
             }
         })
+    }
+    
+    func didUserSelectLoginUsingBiometric() {
+        view.showLoader(withMessage: "Loading")
+        interactor.loginUsingBiometric { [weak self] result in
+            self?.view.dismissLoader()
+            switch result {
+            case .success(let user):
+                debugPrint("Login success using biometric, username: \(String(describing: user.username))")
+                self?.wireframe.navigate(to: .postLogin)
+            case .error(let error):
+                self?.view.showError(error)
+            }
+        }
     }
 }

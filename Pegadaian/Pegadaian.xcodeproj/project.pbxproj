@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1DA4A3FD887450571399DDEC /* Pods_PegadaianTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D9BDF96CE880E37A0E0178 /* Pods_PegadaianTests.framework */; };
+		3C29D6DD2CA4A58D008AA0E9 /* PGSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C29D6DC2CA4A58D008AA0E9 /* PGSError.swift */; };
+		3C29D6DF2CA4C876008AA0E9 /* PegadaianLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C29D6DE2CA4C876008AA0E9 /* PegadaianLoginTests.swift */; };
+		3C29D6E22CA4CA31008AA0E9 /* PegadaianLoginMockModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C29D6E12CA4CA31008AA0E9 /* PegadaianLoginMockModule.swift */; };
+		3C29D6E52CA4CE47008AA0E9 /* PegadaianLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C29D6E42CA4CE47008AA0E9 /* PegadaianLoginUITests.swift */; };
 		3C646EAF2CA265F5008840B4 /* TestAccessLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EAE2CA265F5008840B4 /* TestAccessLevel.swift */; };
 		3C646EB22CA2A08F008840B4 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EB12CA2A08F008840B4 /* OnboardingViewController.swift */; };
 		3C646EB82CA2B58E008840B4 /* Onboarding+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EB62CA2B58E008840B4 /* Onboarding+CoreDataClass.swift */; };
@@ -28,6 +32,13 @@
 		3C646EF92CA40A19008840B4 /* LoginParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EF82CA40A19008840B4 /* LoginParam.swift */; };
 		3C646EFC2CA40AED008840B4 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EFB2CA40AED008840B4 /* EncodableExtensions.swift */; };
 		3C646EFF2CA40CF4008840B4 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EFE2CA40CF4008840B4 /* LoginResponse.swift */; };
+		3C646F082CA492BC008840B4 /* HomepageInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646F032CA492BC008840B4 /* HomepageInterfaces.swift */; };
+		3C646F092CA492BC008840B4 /* HomepagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646F042CA492BC008840B4 /* HomepagePresenter.swift */; };
+		3C646F0A2CA492BC008840B4 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646F052CA492BC008840B4 /* HomepageViewController.swift */; };
+		3C646F0B2CA492BC008840B4 /* HomepageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646F062CA492BC008840B4 /* HomepageInteractor.swift */; };
+		3C646F0C2CA492BC008840B4 /* HomepageWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646F072CA492BC008840B4 /* HomepageWireframe.swift */; };
+		3C646F0F2CA494EA008840B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646F0E2CA494EA008840B4 /* User.swift */; };
+		3C646F122CA4981E008840B4 /* PGSKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646F112CA4981E008840B4 /* PGSKeychain.swift */; };
 		3C980BB02C6A55C10072A728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BAF2C6A55C10072A728 /* AppDelegate.swift */; };
 		3C980BB42C6A55C10072A728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BB32C6A55C10072A728 /* ViewController.swift */; };
 		3C980BBA2C6A55C10072A728 /* Pegadaian.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BB82C6A55C10072A728 /* Pegadaian.xcdatamodeld */; };
@@ -61,6 +72,10 @@
 		02E7F68D07349C2EBD899CE4 /* Pods-Pegadaian-PegadaianUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pegadaian-PegadaianUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pegadaian-PegadaianUITests/Pods-Pegadaian-PegadaianUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C18F2E41966A4544E114F33 /* Pods-Pegadaian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pegadaian.release.xcconfig"; path = "Target Support Files/Pods-Pegadaian/Pods-Pegadaian.release.xcconfig"; sourceTree = "<group>"; };
 		35269EB127BB442C367CF64B /* Pods-PegadaianTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PegadaianTests.debug.xcconfig"; path = "Target Support Files/Pods-PegadaianTests/Pods-PegadaianTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C29D6DC2CA4A58D008AA0E9 /* PGSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSError.swift; sourceTree = "<group>"; };
+		3C29D6DE2CA4C876008AA0E9 /* PegadaianLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegadaianLoginTests.swift; sourceTree = "<group>"; };
+		3C29D6E12CA4CA31008AA0E9 /* PegadaianLoginMockModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegadaianLoginMockModule.swift; sourceTree = "<group>"; };
+		3C29D6E42CA4CE47008AA0E9 /* PegadaianLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegadaianLoginUITests.swift; sourceTree = "<group>"; };
 		3C646EAE2CA265F5008840B4 /* TestAccessLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccessLevel.swift; sourceTree = "<group>"; };
 		3C646EB02CA26E22008840B4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3C646EB12CA2A08F008840B4 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +97,13 @@
 		3C646EF82CA40A19008840B4 /* LoginParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginParam.swift; sourceTree = "<group>"; };
 		3C646EFB2CA40AED008840B4 /* EncodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
 		3C646EFE2CA40CF4008840B4 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		3C646F032CA492BC008840B4 /* HomepageInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageInterfaces.swift; sourceTree = "<group>"; };
+		3C646F042CA492BC008840B4 /* HomepagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepagePresenter.swift; sourceTree = "<group>"; };
+		3C646F052CA492BC008840B4 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		3C646F062CA492BC008840B4 /* HomepageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageInteractor.swift; sourceTree = "<group>"; };
+		3C646F072CA492BC008840B4 /* HomepageWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageWireframe.swift; sourceTree = "<group>"; };
+		3C646F0E2CA494EA008840B4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3C646F112CA4981E008840B4 /* PGSKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSKeychain.swift; sourceTree = "<group>"; };
 		3C980BAC2C6A55C10072A728 /* Pegadaian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pegadaian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C980BAF2C6A55C10072A728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C980BB32C6A55C10072A728 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +152,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C29D6DB2CA4A574008AA0E9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3C29D6DC2CA4A58D008AA0E9 /* PGSError.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3C29D6E02CA4C97C008AA0E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3C29D6DE2CA4C876008AA0E9 /* PegadaianLoginTests.swift */,
+				3C29D6E12CA4CA31008AA0E9 /* PegadaianLoginMockModule.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3C29D6E32CA4CE25008AA0E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3C29D6E42CA4CE47008AA0E9 /* PegadaianLoginUITests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		3C646EB52CA2B422008840B4 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				3C646ED12CA3A0C0008840B4 /* Base */,
+				3C646F022CA492A4008840B4 /* Homepage */,
 				3C646EC02CA3A02A008840B4 /* Login */,
 			);
 			path = Modules;
@@ -239,6 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				3C646EB52CA2B422008840B4 /* CoreData */,
+				3C646F0D2CA494D5008840B4 /* Entities */,
+				3C646F102CA49802008840B4 /* Keychain */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -249,6 +299,34 @@
 				3C646EFA2CA40ADA008840B4 /* Extensions */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		3C646F022CA492A4008840B4 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				3C646F032CA492BC008840B4 /* HomepageInterfaces.swift */,
+				3C646F042CA492BC008840B4 /* HomepagePresenter.swift */,
+				3C646F052CA492BC008840B4 /* HomepageViewController.swift */,
+				3C646F062CA492BC008840B4 /* HomepageInteractor.swift */,
+				3C646F072CA492BC008840B4 /* HomepageWireframe.swift */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		3C646F0D2CA494D5008840B4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3C646F0E2CA494EA008840B4 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3C646F102CA49802008840B4 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				3C646F112CA4981E008840B4 /* PGSKeychain.swift */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 		3C980BA32C6A55C10072A728 = {
@@ -281,6 +359,7 @@
 				3C646EAE2CA265F5008840B4 /* TestAccessLevel.swift */,
 				3C980BB32C6A55C10072A728 /* ViewController.swift */,
 				3C646EBE2CA36CF1008840B4 /* App */,
+				3C29D6DB2CA4A574008AA0E9 /* Constants */,
 				3C646F002CA4919D008840B4 /* Data */,
 				3C646F012CA491AD008840B4 /* Helper */,
 				3C646EBF2CA3A01E008840B4 /* Modules */,
@@ -293,6 +372,7 @@
 		3C980BC82C6A55C30072A728 /* PegadaianTests */ = {
 			isa = PBXGroup;
 			children = (
+				3C29D6E02CA4C97C008AA0E9 /* Login */,
 				3C980BC92C6A55C30072A728 /* PegadaianTests.swift */,
 			);
 			path = PegadaianTests;
@@ -301,6 +381,7 @@
 		3C980BD22C6A55C30072A728 /* PegadaianUITests */ = {
 			isa = PBXGroup;
 			children = (
+				3C29D6E32CA4CE25008AA0E9 /* Login */,
 				3C980BD32C6A55C30072A728 /* PegadaianUITests.swift */,
 				3C980BD52C6A55C30072A728 /* PegadaianUITestsLaunchTests.swift */,
 			);
@@ -576,6 +657,8 @@
 				3C646ED62CA3A0C0008840B4 /* ViewInterface.swift in Sources */,
 				3C646EC82CA3A041008840B4 /* LoginViewController.swift in Sources */,
 				3C646EF42CA3F848008840B4 /* PGSNetwork.swift in Sources */,
+				3C646F0F2CA494EA008840B4 /* User.swift in Sources */,
+				3C29D6DD2CA4A58D008AA0E9 /* PGSError.swift in Sources */,
 				3C646EFC2CA40AED008840B4 /* EncodableExtensions.swift in Sources */,
 				3C646EC92CA3A041008840B4 /* LoginInteractor.swift in Sources */,
 				3C646ED32CA3A0C0008840B4 /* InteractorInterface.swift in Sources */,
@@ -583,6 +666,12 @@
 				3C646EBB2CA2B646008840B4 /* CoreDataHelper.swift in Sources */,
 				3C646EB82CA2B58E008840B4 /* Onboarding+CoreDataClass.swift in Sources */,
 				3C646EB92CA2B58E008840B4 /* Onboarding+CoreDataProperties.swift in Sources */,
+				3C646F082CA492BC008840B4 /* HomepageInterfaces.swift in Sources */,
+				3C646F092CA492BC008840B4 /* HomepagePresenter.swift in Sources */,
+				3C646F122CA4981E008840B4 /* PGSKeychain.swift in Sources */,
+				3C646F0A2CA492BC008840B4 /* HomepageViewController.swift in Sources */,
+				3C646F0B2CA492BC008840B4 /* HomepageInteractor.swift in Sources */,
+				3C646F0C2CA492BC008840B4 /* HomepageWireframe.swift in Sources */,
 				3C646EB22CA2A08F008840B4 /* OnboardingViewController.swift in Sources */,
 				3C646EF92CA40A19008840B4 /* LoginParam.swift in Sources */,
 				3C646ED42CA3A0C0008840B4 /* PresenterInterface.swift in Sources */,
@@ -598,7 +687,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C29D6DF2CA4C876008AA0E9 /* PegadaianLoginTests.swift in Sources */,
 				3C980BCA2C6A55C30072A728 /* PegadaianTests.swift in Sources */,
+				3C29D6E22CA4CA31008AA0E9 /* PegadaianLoginMockModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C980BD42C6A55C30072A728 /* PegadaianUITests.swift in Sources */,
+				3C29D6E52CA4CE47008AA0E9 /* PegadaianLoginUITests.swift in Sources */,
 				3C980BD62C6A55C30072A728 /* PegadaianUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -834,6 +926,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V3NKC5FJ4J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -855,6 +948,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V3NKC5FJ4J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -875,6 +969,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V3NKC5FJ4J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.azharfajrians.PegadaianUITests;
@@ -894,6 +989,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V3NKC5FJ4J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.azharfajrians.PegadaianUITests;

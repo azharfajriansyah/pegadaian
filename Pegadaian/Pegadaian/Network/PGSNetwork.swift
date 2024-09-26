@@ -8,36 +8,31 @@
 import Foundation
 import Alamofire
 
-enum PGSNetworkResult<Value> {
+enum Result<Value> {
     case success(Value)
-    case error(NSError)
+    case error(PGSError)
 }
 
 class PGSNetwork {
     static let shared = PGSNetwork()
     
-    func requestLogin(username: String, password: String) {
-        Alamofire.request("https://dummyjson.com/auth/login", method: .post, parameters: ["username":username, "password":password]).responseJSON { response in
-            debugPrint(response)
-            
+    func request<T: Decodable>(PGSApi: PGSAPI, parameter: Encodable? = nil, expectedResponseType: T.Type, completion: @escaping (Result<T>) -> Void) {
+        var headers: [String:String]?
+        if let token = PGSKeychain.shared.retrieveApiToken() {
+            headers?["Authorization"] = "Bearer \(token.0)"
         }
-    }
-    
-    func request(PGSApi: PGSAPI, parameter: Encodable?, completion: @escaping (PGSNetworkResult<String>) -> Void) {
-        Alamofire.request(PGSApi.url, method: PGSApi.method, parameters: parameter?.toJSON()).responseJSON { response in
+        Alamofire.request(PGSApi.url, method: PGSApi.method, parameters: parameter?.toJSON(), headers: headers).responseJSON { response in
             debugPrint(response)
             
             guard let data = response.data else { return }
             let decoder = JSONDecoder()
             
             do {
-                let response = try decoder.decode(LoginResponse.self, from: data)
-                
-                debugPrint("Login success with token: \(response.accessToken ?? "")")
-                completion(.success(response.accessToken ?? ""))
+                let response = try decoder.decode(T.self, from: data)
+                completion(.success(response))
             } catch {
                 debugPrint("Failed to decode data")
-                completion(.error(NSError()))
+                completion(.error(PGSError.responseDecodingFailed))
             }
         }
     }
