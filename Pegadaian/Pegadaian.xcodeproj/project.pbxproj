@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C646EB42CA2A0C8008840B4 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C646EB32CA2A0C8008840B4 /* OnboardingViewController.swift */; };
 		3C980BB02C6A55C10072A728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BAF2C6A55C10072A728 /* AppDelegate.swift */; };
 		3C980BB42C6A55C10072A728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BB32C6A55C10072A728 /* ViewController.swift */; };
 		3C980BBA2C6A55C10072A728 /* Pegadaian.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BB82C6A55C10072A728 /* Pegadaian.xcdatamodeld */; };
@@ -15,6 +16,9 @@
 		3C980BCA2C6A55C30072A728 /* PegadaianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BC92C6A55C30072A728 /* PegadaianTests.swift */; };
 		3C980BD42C6A55C30072A728 /* PegadaianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BD32C6A55C30072A728 /* PegadaianUITests.swift */; };
 		3C980BD62C6A55C30072A728 /* PegadaianUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C980BD52C6A55C30072A728 /* PegadaianUITestsLaunchTests.swift */; };
+		3CEFB5532CA240970018DA21 /* OnboardingContent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFB5512CA240970018DA21 /* OnboardingContent+CoreDataClass.swift */; };
+		3CEFB5542CA240970018DA21 /* OnboardingContent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFB5522CA240970018DA21 /* OnboardingContent+CoreDataProperties.swift */; };
+		3CEFB5562CA240C40018DA21 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEFB5552CA240C40018DA21 /* CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C526BCA2C75FA7800F15A42 /* TheBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TheBasics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3C646EB32CA2A0C8008840B4 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		3C980BAC2C6A55C10072A728 /* Pegadaian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pegadaian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C980BAF2C6A55C10072A728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C980BB32C6A55C10072A728 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,10 @@
 		3C980BCF2C6A55C30072A728 /* PegadaianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PegadaianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C980BD32C6A55C30072A728 /* PegadaianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegadaianUITests.swift; sourceTree = "<group>"; };
 		3C980BD52C6A55C30072A728 /* PegadaianUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PegadaianUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CEFB5422C9B30370018DA21 /* 1_DataTypesAndDeclarations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 1_DataTypesAndDeclarations.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3CEFB5512CA240970018DA21 /* OnboardingContent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingContent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3CEFB5522CA240970018DA21 /* OnboardingContent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingContent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3CEFB5552CA240C40018DA21 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C526BCB2C75FA8800F15A42 /* SwiftOverview */ = {
+			isa = PBXGroup;
+			children = (
+				3C526BCA2C75FA7800F15A42 /* TheBasics.playground */,
+				3CEFB5422C9B30370018DA21 /* 1_DataTypesAndDeclarations.playground */,
+			);
+			path = SwiftOverview;
+			sourceTree = "<group>";
+		};
 		3C980BA32C6A55C10072A728 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +116,14 @@
 		3C980BAE2C6A55C10072A728 /* Pegadaian */ = {
 			isa = PBXGroup;
 			children = (
+				3CEFB5502CA240340018DA21 /* CoreData */,
+				3C526BCB2C75FA8800F15A42 /* SwiftOverview */,
 				3C980BAF2C6A55C10072A728 /* AppDelegate.swift */,
 				3C980BB32C6A55C10072A728 /* ViewController.swift */,
 				3C980BBB2C6A55C30072A728 /* Assets.xcassets */,
 				3C980BBD2C6A55C30072A728 /* LaunchScreen.storyboard */,
 				3C980BC02C6A55C30072A728 /* Info.plist */,
-				3C980BB82C6A55C10072A728 /* Pegadaian.xcdatamodeld */,
+				3C646EB32CA2A0C8008840B4 /* OnboardingViewController.swift */,
 			);
 			path = Pegadaian;
 			sourceTree = "<group>";
@@ -122,6 +143,25 @@
 				3C980BD52C6A55C30072A728 /* PegadaianUITestsLaunchTests.swift */,
 			);
 			path = PegadaianUITests;
+			sourceTree = "<group>";
+		};
+		3CEFB5492CA23B7B0018DA21 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3CEFB5512CA240970018DA21 /* OnboardingContent+CoreDataClass.swift */,
+				3CEFB5522CA240970018DA21 /* OnboardingContent+CoreDataProperties.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		3CEFB5502CA240340018DA21 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3C980BB82C6A55C10072A728 /* Pegadaian.xcdatamodeld */,
+				3CEFB5492CA23B7B0018DA21 /* ManagedObjects */,
+				3CEFB5552CA240C40018DA21 /* CoreDataHelper.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CEFB5562CA240C40018DA21 /* CoreDataHelper.swift in Sources */,
+				3CEFB5532CA240970018DA21 /* OnboardingContent+CoreDataClass.swift in Sources */,
+				3CEFB5542CA240970018DA21 /* OnboardingContent+CoreDataProperties.swift in Sources */,
 				3C980BBA2C6A55C10072A728 /* Pegadaian.xcdatamodeld in Sources */,
+				3C646EB42CA2A0C8008840B4 /* OnboardingViewController.swift in Sources */,
 				3C980BB42C6A55C10072A728 /* ViewController.swift in Sources */,
 				3C980BB02C6A55C10072A728 /* AppDelegate.swift in Sources */,
 			);
